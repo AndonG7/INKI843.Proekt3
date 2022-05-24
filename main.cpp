@@ -23,7 +23,7 @@ int najgolemaCifra(int indeks) {
 int main()
 {
     int indeks,broj;
-    const string sodrzina = "Andon";
+    const string sodrzina = "INKI843Andon TheWeeknd Nights pass so much quicker than the days did Same clothes you ain't ready for your day shift";
     vector<int> encrypted;
 
     cout<<"Vasiot indeks e: INKI";
@@ -33,6 +33,8 @@ int main()
     for (unsigned int i=0; i<sodrzina.size(); i++) {
         encrypted.push_back((int) sodrzina.at(i) + broj);
     }
+
+    sort(encrypted.begin(), encrypted.end());
 
     for (unsigned int i=0; i<encrypted.size(); i++) {
         cout<<encrypted[i]<<" ";
